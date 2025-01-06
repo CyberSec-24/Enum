@@ -1,0 +1,5 @@
+ldapsearch is a shell-accessible interface for the ldap_search_ext(3) library call
+ldapsearch opens a connection to an LDAP server, binds it, and performs a search using the specified parameters
+The filter should conform to the string representation of the search filters, as defined in RFC 4515
+If ldapsearch finds one or more entries, the attributes specified by attrs are returned. If * is listed, all user attributes are returned. If + is listed, all operational attributes are returned
+Attackers use ldapsearch to enumerate AD users. This allows attackers to establish connections with an LDAP server to perform different searches using specific filters.
