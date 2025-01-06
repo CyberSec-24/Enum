@@ -1,0 +1,6 @@
+Netbios enumeration
+Attackers use the Nmap Scripting Engine (NSE) for discovering NetBIOS shares on a network
+ The NSE nbstat script allows attackers to retrieve the target’s NetBIOS names and MAC addresses
+
+Syntax:- nmap -sV -v --script nbstat.nse <target IP address>
+Command:- nmap -sV -v --script nbstat.nse 10.10.1.22
