@@ -1,0 +1,2 @@
+Attackers use DNSRecon to check all NS records of the target domain for zone transfers. 
+In the above command, the -t option specifies the type of enumeration to be performed, axfr is the type of enumeration 
