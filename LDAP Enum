@@ -1,0 +1,10 @@
+LDAP Enumeration
+->Using Nmap, check whether the target LDAP server is listening on port 389 for LDAP and port 636 for secure LDAP
+->If the target server is listening on the specified ports, initiate the enumeration process by installing LDAP using the following command: pip3 install ldap3
+->As shown in the code given below, create a server object (server), specify the target IP address or hostname and port number. If the target server is listening on secure LDAP,
+specify use_ssl = True
+->Retrieve the Directory System Agent (DSA)–specific entry (DSE) naming contexts by specifying get_info = ldap3.ALL
+->Now, create a connection object, connection, and initiate a call to bind()
+Command:- server = ldap3.Server('Target IP Address', get_info = ldap3.ALL, port =389)
+->After obtaining the naming context, retrieve all the directory objects using the script given below:
+Command:- connection.search(search_base='DC=DOMAIN,DC=DOMAIN', search_filter='(&(objectClass=*))', search_scope='SUBTREE', attributes='*')
