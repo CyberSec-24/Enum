@@ -1,0 +1,10 @@
+DNS Enum 
+Attackers use Nmap for scanning domains and obtaining a list of subdomains, records, IP addresses, and other valuable information from the target host
+Attackers use Nmap to scan domains and obtain a list of subdomains, records, IP addresses, and other valuable information from the target host
+Command:- nmap --script=broadcast-dns-service-discovery certifiedhacker.com
+
+DNSEC Enum
+DNSSEC provides security for DNS queries and responses. Attackers enumerate DNSSEC using dns-nsec-enum.nse or dns-nsec3-enum.nse NSE scripts to obtain information related to domains
+and their subdomains.
+Syntax:- nmap -sU -p 53 --script dns-nsec-enum --script-args dns-nsec-enum.domains= eccouncil.org <target>
+
