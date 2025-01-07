@@ -1,0 +1,8 @@
+Server Message Block (SMB) is a transport protocol that is generally used by Windows systems for providing shared access to files, printers, and serial ports as well as remote access to Windows services
+By default, SMB runs directly on TCP port 445 or via the NetBIOS API on UDP ports 137 and 138 and TCP ports 137 and 139. 
+ By using this information, attackers can perform various attacks such as SMB relay attacks and brute-force attacks.
+Attackers can also use SMB enumeration tools such as Nmap, SMBMap, enum4linux, nullinux, SMBeagle and NetScanTool Pro to perform a directed scan on the SMB service running on port 445
+
+Syntax:-  nmap -p 445 -A <target IP> 
+The STATE of PORT 445/tcp is OPEN, which indicates that port 445 is open and that the SMB service is running
+command:- nmap -p 445 --script smb-protocols 192.168.187.208
