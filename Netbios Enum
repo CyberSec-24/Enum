@@ -1,6 +1,15 @@
 Netbios enumeration
-Attackers use the Nmap Scripting Engine (NSE) for discovering NetBIOS shares on a network
- The NSE nbstat script allows attackers to retrieve the target’s NetBIOS names and MAC addresses
+
+-> NetBIOS enumeration tools explore and scan a network within a given range of IP addresses and lists of computers to identify security loopholes or flaws in networked systems
+
+-> Attackers use the Nmap Scripting Engine (NSE) for discovering NetBIOS shares on a network
+
+-> The NSE nbstat script allows attackers to retrieve the target’s NetBIOS names and MAC addresses
+
+-> NetBIOS Enumerator is an enumeration tool that shows how to use remote network support and to deal with some other web protocols, such as SMB
+
+-> The nbtstat command “nbtstat –a <IP address of the remote machine>” can be executed to obtain the NetBIOS name table of a remote computer
+(Above command is for the Windows)
 
 Syntax:- nmap -sV -v --script nbstat.nse <target IP address>
 Command:- nmap -sV -v --script nbstat.nse 10.10.1.22
