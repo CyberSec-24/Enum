@@ -10,3 +10,5 @@
 -> Example:- snmpwalk -v1 -c public 10.10.1.11
 
 -> Using this command, attackers can also retrieve all the data in transit to the SNMP server from the SNMP agent, including the server being used, user credentials, and other parameters.
+
+-> nmap -sU -p 161 --script=snmp-processes <Target IP Address>
