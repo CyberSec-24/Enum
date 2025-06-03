@@ -1,0 +1,12 @@
+-> SnmpWalk is a command-line tool that allows attackers to scan numerous Simple Network Management Protocol (SNMP)
+
+-> SNMP nodes instantly and identify a set of variables that are available for accessing the target network
+
+-> Using this tool, attackers target the root node so that information from all the sub-nodes such as routers and switches can be fetched. 
+
+-> The information can be retrieved in the form of an object identifier (OID), which is part of the management information base (MIB) associated with the devices having SNMP enabled.
+
+->Syntax:- snmpwalk -v1 -c public <Target IP Address>
+-> Example:- snmpwalk -v1 -c public 10.10.1.11
+
+-> Using this command, attackers can also retrieve all the data in transit to the SNMP server from the SNMP agent, including the server being used, user credentials, and other parameters.
