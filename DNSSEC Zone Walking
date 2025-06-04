@@ -1,0 +1,23 @@
+-> DNSSEC zone walking is a DNS enumeration technique where an attacker attempts to obtain internal records of the DNS server if the DNS zone is not properly configured
+
+-> Organizations use DNSSEC to add security features to the DNS data and provide protection against known threats to the DNS. This security feature uses digital signatures based on public-key cryptography to strengthen authentication in DNS.
+
+-> While DNSSEC provides Internet security, it is also susceptible to a vulnerability called zone enumeration or zone walking.
+
+-> To overcome the zone enumeration vulnerability, a new version of DNSSEC that uses Next Secure version 3 (NSEC3) is used. The NSEC3 record provides the same functionality as NSEC records
+
+-> DNSSEC zone walking tools are used to enumerate the target domain’s DNS record files. 
+
+-> These tools can also perform zone enumeration on NSEC and NSEC3 record files and further use the gathered information to launch attacks such as denial-of-service (DoS) attacks and phishing attacks.
+
+***LDNS
+
+-> LDNS-walk enumerates the DNSSEC zone and obtains results on the DNS record files
+
+-> Syntax:- ldns-walk @<IP of DNS Server> <Target domain>
+
+***DNSRECON
+
+-> DNSRecon is a zone enumeration tool that assists users in enumerating DNS records such as A, AAAA, and CNAME. It also performs NSEC zone enumeration to obtain DNS record files of a target domain.
+
+-> dnsrecon -d <target domain> -z
