@@ -1,0 +1,8 @@
+-> snmp-check is an open-source tool distributed under the GNU General Public License (GPL). Its goal is to automate the process of gathering information on any device with SNMP support
+
+-> snmp-check allows the enumeration of SNMP devices and places the output in a human-readable and user-friendly format. It could be useful for penetration testing or systems monitoring
+
+-> Attackers use this tool to gather information about the target, such as contact, description, write access, devices, domain, hardware and storage information, hostname, Internet Information Services (IIS) statistics.
+
+-> Syntax:- snmp-check <ip address>
+-> Example:- snmp-check 10.10.1.22
