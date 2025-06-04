@@ -1,0 +1,11 @@
+-> The remote procedure call (RPC) is a technology used for creating distributed client/server programs.
+
+-> RPC allows clients and servers to communicate in distributed client/server programs.
+
+-> In general, RPC consists of components such as a client, a server, an endpoint, an endpoint mapper, a client stub, and a server stub, along with various dependencies.
+
+->  Enumerating RPC endpoints enables attackers to identify any vulnerable services on these service ports. 
+
+-> In networks protected by firewalls and other security establishments, this portmapper is often filtered
+
+-> Syntax:- nmap -T4 –A <target IP/network>
