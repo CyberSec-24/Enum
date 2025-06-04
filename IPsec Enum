@@ -1,0 +1,18 @@
+-> IPsec is the most commonly implemented technology for both gateway-to-gateway (LAN-to-LAN) and host-to-gateway (remote access) enterprise VPN solutions.
+
+->  IPsec provides data security by employing various components such as Encapsulating Security Payload (ESP), Authentication Header (AH), and Internet Key Exchange (IKE) to secure communication between VPN endpoints.
+
+-> Most IPsec-based VPNs use the Internet Security Association Key Management Protocol, a part of IKE, to establish, negotiate, modify, and delete Security Associations and cryptographic keys in a VPN environment.
+
+-> Attackers can perform simple direct scanning for ISAKMP at UDP port 500 with tools such as Nmap to acquire information related to the presence of a VPN gateway.
+
+-> Syntax:- nmap –sU –p 500 <target IP address>
+-> Example:- nmap –sU –p 500 10.10.1.22
+
+-> kers can probe further using fingerprinting tools such as ike-scan to enumerate sensitive information, including the encryption and hashing algorithm, authentication type, key distribution algorithm, and SA LifeDuration. 
+
+-> In this type of scan, specially crafted IKE packets with an ISAKMP header are sent to the target gateway, and the responses are recorded.
+
+***ike-scan
+
+-> ke-scan discovers IKE hosts and can fingerprint them using the retransmission backoff pattern. ike-scan can perform the following functions.
