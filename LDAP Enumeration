@@ -1,0 +1,13 @@
+->  The Lightweight Directory Access Protocol (LDAP) is one such protocol that accesses the directory listings.
+
+-> An external user who successfully enumerates that information by manipulating the protocols can break into the network and may misuse the network resources.
+
+-> LDAP is an Internet protocol for accessing distributed directory services. LDAP accesses directory listings within Active Directory or from other directory services.
+
+->LDAP is a hierarchical or logical form of a directory, similar to a company’s organizational chart.
+
+->  A client starts an LDAP session by connecting to a Directory System Agent (DSA), typically on TCP port 389, and sends an operation request to the DSA.
+
+-> Attackers use the ldap-brute NSE script to brute-force LDAP authentication. By default, it uses the built-in username and password lists. The userdb and passdb script arguments can be employed to use custom lists
+
+-> Example:- nmap -p 389 --script ldap-brute --script-args ldap.base='"cn=users,dc=CEH,dc=com"' 10.10.1.22 
