@@ -1,0 +1,25 @@
+-> DNS cache snooping is a type of DNS enumeration technique in which an attacker queries the DNS server for a specific cached DNS record. 
+
+-> By using this cached record, the attacker can determine the sites recently visited by the user.
+
+->  This information can further reveal important information such as the name of the owner of the DNS server, its service provider, the name of its vendor, and bank details.
+
+-> Non-recursive Method:-
+In this method, to snoop on a DNS server, attackers send a non-recursive query by setting the Recursion Desired (RD) bit in the query header to zero.
+
+If the queried record is present in the DNS cache, the DNS server responds with the information indicating that some user on the system has visited a specific domain. 
+
+Attackers use the dig command followed by the name/IP address of the DNS server, domain name, and type of DNS record file. The +norecurse option is used to set the query to non-recursive
+
+Syntax:- dig @<IP of DNS server> <Target domain> A +norecurse
+
+-> Recursive Method
+In this method, to snoop on the DNS server, attackers send a recursive query by setting the +recurse option instead of the +norecurse option
+
+In this method, the time-to-live (TTL) field is examined to determine the duration for which the DNS record remains in the cache. 
+
+Here, the TTL value obtained from the result is compared with the TTL that was initially set in the TTL field.
+
+If the TTL value in the result is less than the initial TTL value, the record is cached, indicating that someone on the system has visited that site.
+
+Syntax:- dig @<IP of DNS server> <Target domain> A +recurse
