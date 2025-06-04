@@ -1,0 +1,4 @@
+-> Attackers use Nmap to scan domains and obtain a list of subdomains, records, IP addresses, and other valuable information from the target host.
+
+Syntax:- nmap --script=broadcast-dns-service-discovery <Target Domain>
+Example:- nmap --script=broadcast-dns-service-discovery certifiedhacker.com
