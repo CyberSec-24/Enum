@@ -1,0 +1,10 @@
+-> Mail systems commonly use SMTP with POP3 and IMAP, which enable users to save messages in the server mailbox and download them from the server when necessary.
+
+-> SMTP uses mail exchange (MX) servers to direct mail via DNS. It runs on TCP port 25, 2525, or 587.
+
+->  Attackers can directly interact with SMTP via the Telnet prompt and collect a list of valid users on the SMTP server.
+
+-> Attackers use Nmap to enumerate information from the target SMTP server. They enumerate the target SMTP server using various SMTP commands available with Nmap Scripting Engine.
+
+-> Syntax:- nmap -p 25, 365, 587 -script=smtp-commands <Target IP Address >
+-> Example:- nmap -p 25, 365, 587 -script=smtp-commands 10.10.1.22
