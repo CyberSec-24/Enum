@@ -1,0 +1,12 @@
+-> VoIP is an advanced technology that has replaced the conventional public switched telephone network (PSTN) in both corporate and home environments. 
+
+-> VoIP uses Internet infrastructure to establish connections for voice calls; data are also transmitted on the same network. However, VoIP is vulnerable to TCP/IP attack vectors.
+
+-> Through VoIP enumeration, attackers can gather sensitive information such as VoIP gateway/servers, IP-private branch exchange (PBX) systems, and User-Agent IP addresses and user extensions of client software (softphones) or VoIP phones.
+
+***SvMap
+
+-> Svmap is an open-source scanner that identifies SIP devices and PBX servers on a target network. It can be helpful for system administrators when used as a network inventory tool.
+
+->  syntax:- svmap <target network range/IP Address>
+
